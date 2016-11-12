@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1478980920 source:c:\users\marcelo\documents\wxprojeto\numbers\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+
