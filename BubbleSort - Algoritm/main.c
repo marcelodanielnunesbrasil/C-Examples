@@ -15,7 +15,7 @@ int main()
     printf("*** PROGRAMA NUMEROS *** %s" , ENTER_BUTTON);
     printf("Selecione a opcao de ordenacao: %s" , ENTER_BUTTON);
     printf("1 -> crescente %s" , ENTER_BUTTON);
-    printf("1 -> descrecente %s" , ENTER_BUTTON);
+    printf("1 -> decrescente %s" , ENTER_BUTTON);
     printf("Entre com a opcao: ");
     scanf("%d", &opcao); // recebe o valor das opcoes acima
 
@@ -45,7 +45,7 @@ int main()
             printf("%d %s", numero[i], ENTER_BUTTON);
         }
 
-    }else if(opcao == 2){ // DESCRECENTE
+    }else if(opcao == 2){ // DECRESCENTE
         for (i = 0; i < 4; i++){
             for (j = i + 1; j < 4; j++){
                 if (numero[i] < numero[j]){
