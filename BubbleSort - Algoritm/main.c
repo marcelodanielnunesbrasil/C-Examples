@@ -23,20 +23,26 @@ int main()
 
     printf("\nOrdem Crescente\n");
      // CRESCENTE
-    for (i = 0; i < 4; i++){
-        for (j = i + 1; j < 4; j++){
-            if (numero[i] > numero[j]){
+    for (i = 0; i < 4; i++)
+    {
+        for (j = i + 1; j < 4; j++)
+        {
+            if (numero[i] > numero[j])
+            {
                     aux = numero[i];
                     numero[i] = numero[j];
                     numero[j] = aux;
             }
-            if(numero[i] == numero[j]){
+            if(numero[i] == numero[j])
+            {
                     numero[j] = -1;
             }
         }
     }
-    for (i = 0; i < 4; i++){
-            if(numero[i] >= 0){
+    for (i = 0; i < 4; i++)
+    {
+            if(numero[i] >= 0)
+            {
                printf("%d %s", numero[i], ENTER_BUTTON);
             }
     }
@@ -44,20 +50,25 @@ int main()
 
     printf("\nOrdem Decrescente\n");
     // DECRESCENTE
-    for (i = 0; i < 4; i++){
-        for (j = i + 1; j < 4; j++){
-            if (numero[i] < numero[j]){
+    for (i = 0; i < 4; i++)
+    {
+        for (j = i + 1; j < 4; j++)
+        {
+            if (numero[i] < numero[j])
+            {
                 aux = numero[i];
                 numero[i] = numero[j];
                 numero[j] = aux;
             }
         }
     }
-    for (i = 0; i < 4; i++){
-        if(numero[i] >= 0){
+    for (i = 0; i < 4; i++)
+    {
+        if(numero[i] >= 0)
+        {
             printf("%d %s", numero[i], ENTER_BUTTON);
         }
     }
 
-        return 0;
-    }
+    return 0;
+}
